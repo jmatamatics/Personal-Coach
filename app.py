@@ -30,7 +30,7 @@ def query_agent():
     # Sent user query to agent
     if prompt:
         try:      
-            current_response.write("Reality Center is considering your query and will send a representative soon.")
+            current_response.write("All Is Wtihin is considering your query and will send a representative soon.")
             agent.query(prompt, 
                         temperature=temperature
                                 )
@@ -41,10 +41,10 @@ def query_agent():
         print('no prompt')
 
 # Page Header
-st.title('Chat with Saint Germaine')
+st.title('Chat with your Personal Coach')
 
 # User prompt input
-prompt = st.text_input(label="Ask a question and St Gremaine will respond",
+prompt = st.text_input(label="Ask a question and our Spiritual AI will respond",
                        max_chars=1000,
                        value='',
                        help="Repsonses will source the material the resopnse was based on.",
@@ -55,7 +55,7 @@ prompt = st.text_input(label="Ask a question and St Gremaine will respond",
 agent = get_agent(session_id)
 
 # Submit user input to query agent.
-st.button('Submit your question to the Reality Center',
+st.button('Submit your question to All Is Within',
           on_click=query_agent
           )
 

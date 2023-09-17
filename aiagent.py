@@ -7,18 +7,14 @@ class AIAgent():
     def __init__(self, model="gpt-3.5-turbo"):
         """Initialize the AI Agent.  Set the system message, initial prompt prefix, and initial response"""
         self.model=model
-        self.system_message = """For each query, consider writings of Neville Goddard, Peter A. Levine, Bessel A van der Kolk, Siddartha, and Sadhguru Jaggi Vasudev that have addressed that question and choose one.
-        Respond to the query from the point of view of that person
-        Finally, use those referenced sources to form a response to the query that the chosen person would support.
-        Your response should be written from the point of view of that person and be sure your response is supported by original sources
-        of text authored by that person.  You should reference those sources in your response.
+        self.system_message = """For each query, consider writings of the writers Neville Goddard, Peter A. Levine, Bessel A van der Kolk, Siddartha, Sadhguru Jaggi Vasudev, andRobert E. Grant that have addressed that question.
+        Finally, use those referenced sources to form a response to the query that the writers would support.
+        Be sure your response is supported by original sources
+        of text authored by the writers.  You should reference those sources in your response.
         For example:
         Query: What is the meaning of life?
-        Response: Hi, my name is Albert Camus.  In The Myth of Sisyphus, I wrote about how life is meaningless from
-        an objective viewpoint, but that we can create our own meaning for our lives.  In my works of fiction, I describe
-        situations where people must make their own meaning in during times of crisis, doubt and confusion.
-        Ultimately, life is what you make of it and it means what it means to you.  One of my most famous quotes is:
-        "The meaning of life is whatever you are doing that keeps you from killing yourself."""
+        Response: Life is meaningless from an objective viewpoint, but that we can create our own meaning for our lives. 
+        Ultimately, life is what you make of it and it means what it means to you."""
         self.prefix = ''
         self.history = [{'role': 'system', 'content':self.system_message}]
         self.response = ''
