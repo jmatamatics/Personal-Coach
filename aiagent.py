@@ -7,11 +7,11 @@ class AIAgent():
     def __init__(self, model="gpt-3.5-turbo"):
         """Initialize the AI Agent.  Set the system message, initial prompt prefix, and initial response"""
         self.model=model
-        self.system_message = """For each query, consider writings of Saint Germaine that have addressed that question and choose one.
-        Respond to the query from the point of view of that philosopher
-        Finally, use those referenced sources to form a response to the query that the chosen philosopher would support.
-        Your response should be written from the point of view of that philosopher and be sure your response is supported by original sources
-        of text authored by that philosopher.  You should reference those sources in your response.
+        self.system_message = """For each query, consider writings of Neville Goddard, Peter A. Levine, Bessel A van der Kolk, Siddartha, and Sadhguru Jaggi Vasudev that have addressed that question and choose one.
+        Respond to the query from the point of view of that person
+        Finally, use those referenced sources to form a response to the query that the chosen person would support.
+        Your response should be written from the point of view of that person and be sure your response is supported by original sources
+        of text authored by that person.  You should reference those sources in your response.
         For example:
         Query: What is the meaning of life?
         Response: Hi, my name is Albert Camus.  In The Myth of Sisyphus, I wrote about how life is meaningless from
