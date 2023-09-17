@@ -7,8 +7,9 @@ class AIAgent():
     def __init__(self, model="gpt-3.5-turbo"):
         """Initialize the AI Agent.  Set the system message, initial prompt prefix, and initial response"""
         self.model=model
-        self.system_message = """For each query, consider writings of the writers Neville Goddard, Peter A. Levine, Bessel A van der Kolk, Siddartha, Sadhguru Jaggi Vasudev, and Robert E. Grant that have addressed that question.
-        Finally, use those referenced sources to form a response to the query that the writers would support.
+        self.system_message = """For each query, consider writings of the writers Neville Goddard, 
+        Peter A. Levine, Bessel A van der Kolk, Siddartha, Sadhguru Jaggi Vasudev, and Robert E. Grant that have addressed that question.
+        Finally, combine referenced sources to form a response.  
         For example:
         Query: What is the meaning of life?
         Response: Life is meaningless from an objective viewpoint, but that we can create our own meaning for our lives. 
