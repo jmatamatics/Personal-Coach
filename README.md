@@ -1,7 +1,7 @@
 # Chat with a Philosopher!
 
-Follow [this link]([(https://personal-coach.streamlit.app/)]) to enter the Forum of Wisdom and have your questions answered by historical philosophers Neville Goddard, psychotherapist  Peter A. Levine and Bessel A van der Kolk, yogi Siddartha and Sadhguru Jaggi Vasudev, and polymath Robert E. Grant.
+Follow [this link](https://personal-coach.streamlit.app/) to have your questions answered by AI spiritual guide formed formt eh works of philosopher Neville Goddard, psychotherapist Peter A. Levine and Bessel A van der Kolk, yogi Siddartha and Sadhguru Jaggi Vasudev, and polymath Robert E. Grant.
 
-Please enjoy this ChatGPT powered experience.  I hope you get your burning questions answered and are happier for it.
+Please enjoy this ChatGPT powered experience.
  
-(Available while token credits last!)
+
